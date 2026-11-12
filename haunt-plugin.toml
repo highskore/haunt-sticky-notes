@@ -1,0 +1,20 @@
+[plugin]
+id = "dev.haunt.sticky-notes"
+name = "Sticky notes"
+description = "Pin a note to any agent tab in Haunt, with an optional reminder"
+version = "0.1.0"
+api = "0.5"
+entry = "target/wasm32-wasip2/release/haunt_plugin.wasm"
+license = "MIT"
+
+[capabilities]
+# Only to learn which tab is which agent; the plugin keeps no event text.
+events = ["agent.session-start", "agent.stop"]
+decorate = true
+notifications = true
+timer = true
+
+[settings]
+row = { type = "bool", default = true, description = "Show the note and its reminder on the tab's row" }
+reminders = { type = "bool", default = true, description = "Notify when a reminder is due" }
+unverified = { type = "bool", default = false, description = "Also learn tab names from events without the tab's nonce, which anything in the terminal can forge" }

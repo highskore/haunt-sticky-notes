@@ -1,6 +1,17 @@
+<div align="center">
+
+<img src="docs/icon.png" width="96" alt="">
+
 # Sticky notes
 
-Pin a note to any agent tab in Haunt, with an optional reminder.
+**Pin a note to any agent tab in Haunt, with an optional reminder.**
+
+[![Haunt plugin](https://img.shields.io/badge/Haunt-plugin-D97757)](https://github.com/highskore/haunt-hackathon)
+![Plugin API 0.5](https://img.shields.io/badge/plugin%20API-0.5-111)
+![WASM component](https://img.shields.io/badge/WASM-component-654ff0?logo=webassembly&logoColor=white)
+![MIT licence](https://img.shields.io/badge/licence-MIT-6b7280)
+
+</div>
 
 Type `note` in the ⌘K palette, then the tab's name, the note and, if you want a reminder, `in 10m`, `in 1h` or `in 2d`:
 
